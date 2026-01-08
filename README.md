@@ -67,22 +67,6 @@ cd build
 cmake ..
 make -j$(nproc)
 ```
-
-### Building on Windows (MSVC/Qt Creator)
-
-1. Open `TCPServer/TCPServer/CMakeLists.txt` in Qt Creator.
-2. Configure with your Qt kit and click **Build**.
-3. Repeat for `TCPClient/TCPClient/CMakeLists.txt`.
-
-Alternatively, use the command line (if MSVC and Qt are in PATH):
-```batch
-cd TCPServer\TCPServer
-mkdir build
-cd build
-cmake .. -G "Visual Studio 16 2019"
-cmake --build . --config Release
-```
-
 ---
 
 ## Running the Applications
@@ -152,7 +136,7 @@ cd TCPServer/TCPServer/build && ./TCPServer
 **Terminal 2 (Client GUI):**
 - Launch the client application.
 - Set IP to `127.0.0.1`, port to `4000`.
-- Click **Connect**, then send messages.
+- Click **Connect to Server**, then send messages.
 
 ### Load Testing (High Concurrency)
 
