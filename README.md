@@ -51,7 +51,7 @@ A robust, multi-threaded TCP server and client implementation using Qt 5/6. The 
 
 ```bash
 # Clone or extract the repository
-cd /home/sbura/TestApp
+cd /TestApp
 
 # Build TCPServer
 cd TCPServer/TCPServer
